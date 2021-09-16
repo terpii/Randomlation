@@ -11,9 +11,9 @@ public class Main {
 
         init();
 
-        Debug.print("Attempting test request...");
+        Debug.print("Attempting multiple tables test request...");
         try {
-            Debug.print(API.getTable("https://api.bls.gov/publicAPI/v1/timeseries/data/", "SMU19197802023800001"));
+            Debug.print(API.getTables("https://api.bls.gov/publicAPI/v1/timeseries/data/", new String[]{"LAUCN040010000000005", "LAUCN040010000000006"}));
         } catch (IOException e) {
             e.printStackTrace();
         }
