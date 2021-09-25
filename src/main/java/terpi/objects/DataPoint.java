@@ -2,15 +2,16 @@ package terpi.objects;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Date;
 
 
 public class DataPoint<Date , Float>
 {
-	public Date time;
+	public LocalDate time;
 	public java.lang.Float value;
 
-	public DataPoint(Date time, java.lang.Float value)
+	public DataPoint(LocalDate time, java.lang.Float value)
 	{
 		this.time = time;
 		this.value = value;
@@ -24,12 +25,12 @@ public class DataPoint<Date , Float>
 
 
 	//getters and setters
-	public Date getTime()
+	public LocalDate getTime()
 	{
 		return time;
 	}
 
-	public void setTime(Date time)
+	public void setTime(LocalDate time)
 	{
 		this.time = time;
 	}
